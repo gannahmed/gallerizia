@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/564x/a1/50/a1/a150a19dd11b2e78014f9302bc632639.jpg">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/account.css">
+    <title>login</title>
+</head>
+
+<body>
+    <!------------------NAVBAR---------------->
+    <section class="top-nav">
+        <nav>
+            <h2>GALLERIZIA</h2>
+            <ul class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">my account
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../index.html">home</a>
+                        <a href="#">saved</a>
+                        <a href="#">likes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">pages
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">about us</a>
+                        <a href="#">about us 2</a>
+                        <a href="#">our process</a>
+                        <a href="#">testimonials</a>
+                        <a href="#">pricing</a>
+                        <a href="#">dynamic pricing</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">contact us</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">albums
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content wide">
+                        <a href="#">boxed 2 columns</a>
+                        <a href="#">classic 2 columns</a>
+                        <a href="#">full screen</a>
+                        <a href="#">with spaces 3 columns</a>
+                        <a href="#">metro porfolio</a>
+                        <a href="#">preset 3</a>
+                    </div>
+
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">gallery
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">full width</a>
+                        <a href="#">without spaces</a>
+                        <a href="#">creative</a>
+                        <a href="#">hovers with galleries</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">proofing
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">proof gallery</a>
+                        <a href="#">right click disabled</a>
+                        <a href="#">protected</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">shop
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">shop</a>
+                        <a href="#">sign in</a>
+                        <a href="#">sign up</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">skins
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">skin 1</a>
+                        <a href="#">skin 2</a>
+                        <a href="#">skin 3</a>
+                    </div>
+                </div>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </section>
+    <!---------------HEADER------------->
+    <section class="header">
+        <h1>my account</h1>
+        <span class="account"><a class="account" href="../index.html">home</a> / my account</span>
+    </section>
+    <!---------------FORM-------------->
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+
+                <form action="#">
+                    <div class="input-field">
+                        <i class="uil uil-envelope-alt icon"></i>
+                        <label for="username" id="input" class="user">username or email</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="uil uil-lock icon"></i>
+                        <label for="password" id="input" class="label">password</label>
+                        <input type="password" class="password" id="password" required>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">remember me</label>
+                        </div>
+                        <a href="#" class="text">lost your password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" class="log-in" value="login now" required>
+                    </div>
+
+                    <div class="login-signup">
+                        <span class="text">NOT a member?</span>
+                        <a href="#" class="text signup-link">signup now</a>
+                    </div>
+                </form>
+            </div>
+
+            <!--------------REGISTRATION FORM------------->
+            <!-- <div class="form signup">
+                <span class="title">reigstration</span>
+
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="username" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="username or email" required>
+                        <i class="uil uil-envelope-alt icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="confrim a  password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">remember me</label>
+                        </div>
+                        <a href="#" class="text">forget password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="login now" required>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">NOT a member?</span>
+                    <a href="#" class="text login-link">signup now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+
+
+            <script src="./account.js"></script>
+            <script type="module" src="../src/bundle.mjs"></script>
+
+
+</body>
+
+</html>

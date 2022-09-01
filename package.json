@@ -1,0 +1,23 @@
+{
+  "name": "gallerizia",
+  "version": "1.0.0",
+  "description": "\"# gallerizia\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gannahmed/gallerizia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gannahmed/gallerizia/issues"
+  },
+  "homepage": "https://github.com/gannahmed/gallerizia#readme",
+  "dependencies": {
+    "firebase": "^9.9.3"
+  }
+}
