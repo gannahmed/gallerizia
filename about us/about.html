@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/564x/a1/50/a1/a150a19dd11b2e78014f9302bc632639.jpg">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <title>GALLERIZIA - About us</title>
+</head>
+
+<body>
+    <!----------------LOADING--------------->
+    <div id="loader" class="center">G</div>
+
+    <!------------------NAVBAR---------------->
+    <section class="top-nav">
+        <nav>
+            <h2>GALLERIZIA</h2>
+            <ul class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">home
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="my account/account.html">my account</a>
+                        <a href="#">saved</a>
+                        <a href="#">likes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">pages
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../about us/about.html">about us</a>
+                        <a href="../about two/two.html">about us 2</a>
+                        <a href="../our process/process.html">our process</a>
+                        <a href="../TESTIMONIALS/test.html">testimonials</a>
+                        <a href="../pricing/pricing.html">pricing</a>
+                        <a href="../dynamic/dynamic.html">dynamic pricing</a>
+                        <a href="../FAQ/faq.html">FAQ</a>
+                        <a href="#">contact us</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">albums
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content wide">
+                        <a href="#">boxed 2 columns</a>
+                        <a href="#">classic 2 columns</a>
+                        <a href="#">full screen</a>
+                        <a href="#">with spaces 3 columns</a>
+                        <a href="#">metro porfolio</a>
+                        <a href="#">preset 3</a>
+                    </div>
+
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">gallery
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">full width</a>
+                        <a href="#">without spaces</a>
+                        <a href="#">creative</a>
+                        <a href="#">hovers with galleries</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">proofing
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">proof gallery</a>
+                        <a href="#">right click disabled</a>
+                        <a href="#">protected</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">shop
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">shop</a>
+                        <a href="#">sign in</a>
+                        <a href="#">sign up</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">skins
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">skin 1</a>
+                        <a href="#">skin 2</a>
+                        <a href="#">skin 3</a>
+                    </div>
+                </div>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </section>
+    <!-------------Header------------>
+    <section class="header">
+        <h1>about <br> our agency</h1>
+    </section>
+    <div class="cover">
+    </div>
+    <section class="studio">
+        <span class="color">our studio</span>
+        <p>GALLERIZIA COMBINES THE CLASSIC KNOWLEDGE OF TRADITIONAL PORTRAITURE WITH AN INNOVATIVE AND CONTEMPORARY
+            STYLE.</p>
+        <!----------->
+        <div class="right">
+            <div class="drag">
+                <div id="dropdiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h3>Drop here to remove</h3>
+                </div>
+            </div>
+
+            <div class="services" runat="server">
+                <h3>services</h3>
+
+                <p id="node1" draggable="true" ondragstart="drag(event)"> Fashion Photography</p>
+                <p id="node2" draggable="true" ondragstart="drag(event)">Wedding Photography</p>
+                <p id="node3" draggable="true" ondragstart="drag(event)">Commercial Shooting</p>
+                <p id="node4" draggable="true" ondragstart="drag(event)">Photo Studio</p>
+            </div>
+            <div class="services">
+                <h3 id="node5" draggable="true" ondragstart="drag(event)">awards</h3>
+                <p id="node6" draggable="true" ondragstart="drag(event)">The National Geographic Photo</p>
+                <p id="node7" draggable="true" ondragstart="drag(event)">Contest</p>
+                <p id="node8" draggable="true" ondragstart="drag(event)">Sony World Photography</p>
+                <p id="node9" draggable="true" ondragstart="drag(event)">Monovisions Photography</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--------------- Slide Show -------------->
+    <div class="team">
+        <span>team</span>
+        <h2>meet our team</h2>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img class="img" id="myImg1"
+                        src="https://i.pinimg.com/564x/ff/9a/32/ff9a32ccb5d2308a51daa1a314a42dde.jpg" alt="someone">
+                    <div class="text">jolly kravts, manager</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg2"
+                        src="https://i.pinimg.com/564x/d9/8d/82/d98d8284dfaee97eb53baee1b0126bd9.jpg" alt="someone">
+                    <div class="text">nelly holde, assistant</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg3"
+                        src="https://i.pinimg.com/564x/7d/d0/36/7dd036a92ea08b1644882f558bde6362.jpg" alt="someone">
+                    <div class="text">ariana holde, Photographer</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg4"
+                        src="https://i.pinimg.com/736x/f9/a9/1d/f9a91daa7ec59be23274f596957edfef.jpg" alt="someone">
+                    <div class="text">anton lerol, Photographer</div>
+                </div>
+
+                <!--------- 4 Slides Doubles  -------->
+
+                <div class="slide">
+                    <img class="img" id="myImg1"
+                        src="https://i.pinimg.com/564x/ff/9a/32/ff9a32ccb5d2308a51daa1a314a42dde.jpg" alt="someone">
+                    <div class="text">jolly kravts, manager</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg2"
+                        src="https://i.pinimg.com/564x/d9/8d/82/d98d8284dfaee97eb53baee1b0126bd9.jpg" alt="someone">
+                    <div class="text">nelly holde, assistant</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg3" src="
+                        https://i.pinimg.com/564x/7d/d0/36/7dd036a92ea08b1644882f558bde6362.jpg" alt="someone">
+                    <div class="text">ariana holde, Photographer</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg4"
+                        src="https://i.pinimg.com/736x/f9/a9/1d/f9a91daa7ec59be23274f596957edfef.jpg" alt="someone">
+                    <div class="text">anton lerol, Photographer</div>
+                </div>
+
+                <!---------- 4 slides triples ------------>
+
+
+                <div class="slide">
+                    <img class="img" id="myImg1"
+                        src="https://i.pinimg.com/564x/ff/9a/32/ff9a32ccb5d2308a51daa1a314a42dde.jpg" alt="someone">
+                    <div class="text">jolly kravts, manager</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg2"
+                        src="https://i.pinimg.com/564x/d9/8d/82/d98d8284dfaee97eb53baee1b0126bd9.jpg" alt="someone">
+                    <div class="text">nelly holde, assistant</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg3"
+                        src="https://i.pinimg.com/564x/7d/d0/36/7dd036a92ea08b1644882f558bde6362.jpg" alt="someone">
+                    <div class="text">ariana holde, Photographer</div>
+                </div>
+                <div class="slide">
+                    <img class="img" id="myImg4"
+                        src="https://i.pinimg.com/736x/f9/a9/1d/f9a91daa7ec59be23274f596957edfef.jpg" alt="someone">
+                    <div class="text">anton lerol, Photographer</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <i class="fa-solid fa-xmark close"></i>
+        <button class="buttons" type="button" onclick="zoomin ()"><i
+                class="fa-solid fa-magnifying-glass-plus"></i></button>
+        <button class="button" type="button" onclick="zoomout ()"><i
+                class="fa-solid fa-magnifying-glass-minus"></i></button>
+
+        <img class="modalImage" id="img01">
+    </div>
+
+    <!----------- Creative --------->
+    <div class="team">
+        <span>team</span>
+        <h2>creative approach</h2>
+    </div>
+    <section class="quality">
+        <div class="curiosity">
+            <h2>0.1 CURIOSITY</h2>
+            <span>You how all this mistaken idea of denouncing pleasure and
+                praising pain was born and I will give you a
+                complete account of the system.</span>
+        </div>
+        <div class="curiosity">
+            <h2>0.2 QUALITY</h2>
+            <span>You how all this mistaken idea of denouncing pleasure and
+                praising pain was born and I will give you a
+                complete account of the system.</span>
+        </div>
+        <div class="curiosity">
+            <h2>0.3 COLLABORATION</h2>
+            <span>You how all this mistaken idea of denouncing pleasure and
+                praising pain was born and I will give you a
+                complete account of the system.</span>
+        </div>
+    </section>
+    <!----------- Companies ---------->
+    <div class="company">
+        <div class="logo">
+            <a href="#">
+                <img src="./images/company1.png" alt="company">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="./images/company2.jpg" alt="company">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="./images/company3.png" alt="company">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="./images/company4.png" alt="company">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="./images/company5.png" style="width: 150px;" alt="company">
+            </a>
+        </div>
+    </div>
+    <!---------- Instagram ---------->
+    <div class="instagram">
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/18/92/d8/1892d85a5d094141c8bb852d9dd46602.jpg" style="height: 254px;"
+                alt="" class="image">
+            <div class="overlay">
+                <a href="#" class="icon" title="User Profile">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mainPage">
+                <span>instagram</span>
+                <a href="#">@Galleriziaphoto</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/1c/8a/e0/1c8ae016f9154dd22b615c2f781e3888.jpg" style="height: 254px;"
+                alt="" class="image">
+            <div class="overlay">
+                <a href="#" class="icon" title="User Profile">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/da/1a/fb/da1afbd0cc813696cb619bc6fcd41bc0.jpg" style="height: 254px;"
+                alt="" class="image">
+            <div class="overlay">
+                <a href="#" class="icon" title="User Profile">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/6d/dd/eb/6dddeb579fb4d6aae7219dd3c9dbb062.jpg" style="height: 254px;"
+                alt="" class="image">
+            <div class="overlay">
+                <a href="#" class="icon" title="User Profile">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/57/1e/00/571e005733acab9bbb26721bfb347119.jpg" style="height: 254px;"
+                alt="" class="image">
+            <div class="overlay">
+                <a href="#" class="icon" title="User Profile">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!----------------- Photographer ------------->
+    <section class="photographer">
+        <h1>need a photographer? someone with experince to collaborate with? write me</h1>
+        <a href="https://mail.google.com">gallerizia@zaheto.com</a>
+    </section>
+    <!---------- Footer ---------->
+    <footer>
+        <div class="cover-footer">
+            <div class="footer">
+                <div class="footer-content">
+                    <h2>GALLERIZIA</h2>
+                    <p>&copy; GALLERIZIA photoghraphy. 2022</p>
+                </div>
+                <div class="footer-content">
+                    <span>GALLERIZIA@zaheto.com</span>
+                    <span>0123456789</span>
+                </div>
+                <div class="footer-content">
+                    <span>CAIRO,GIZA</span>
+                    <span>DOKKI, ST-OMAR BAHANASAWI</span>
+                </div>
+                <div class="footer-content">
+                    <span>FOLLOW MY SOCIAL</span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./about.js"></script>
+</body>
+
+</html>

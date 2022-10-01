@@ -1,3 +1,13 @@
+////////////////LOADER////////////////
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#loader").style.visibility = "visible";
+  } else {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
+};
 //////////////////////// HAMBURGER ////////////////////////////
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -18,9 +28,7 @@ function closeMenu() {
 ///////////////////FORM////////////////////
 const container = document.querySelector(".container"),
   pwShowHide = document.querySelectorAll(".showHidePw"),
-  pwFields = document.querySelectorAll(".password"),
-  signUp = document.querySelector(".signup-link"),
-  login = document.querySelector(".login-link");
+  pwFields = document.querySelectorAll(".password");
 
 //////// js code to show or hide password and change icon //////
 pwShowHide.forEach((eyeIcon) => {
@@ -42,10 +50,3 @@ pwShowHide.forEach((eyeIcon) => {
     });
   });
 });
-/////////////js code to appear signup and login form ///////////
-// signUp.addEventListener("click", () => {
-//   container.classList.add("active");
-// });
-// login.addEventListener("click", () => {
-//   container.classList.remove("active");
-// });

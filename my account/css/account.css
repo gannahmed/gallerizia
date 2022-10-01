@@ -6,12 +6,45 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  height: 2000px;
   background-color: #f2efeb;
-  /* color: white; */
 }
 * {
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+::selection {
+  color: white;
+  background: black;
+}
+#loader {
+  width: 70px;
+  height: 70px;
+  font-size: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 /************************NAVBAR*****************/
 
@@ -76,6 +109,7 @@ nav h2 {
   font-size: 20px;
   font-family: "Raleway";
   font-weight: 300;
+  margin-right: 160px;
 }
 .nav-link {
   text-decoration: none;
@@ -120,12 +154,12 @@ nav h2 {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: white;
+  background: black;
 }
 @media only screen and (max-width: 768px) {
   .nav-menu {
     z-index: 1;
-    background-color: black;
+    background-color: #f2efeb;
     position: fixed;
     left: -100%;
     top: 5rem;
@@ -133,8 +167,12 @@ nav h2 {
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.8s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
   }
 
   .nav-menu.active {
@@ -149,7 +187,7 @@ nav h2 {
     display: block;
     cursor: pointer;
     float: right;
-    margin-right: 30px;
+    margin-right: 24px;
     margin-top: 20px;
   }
 
@@ -210,31 +248,6 @@ form {
   padding: 30px;
   /* transition: margin-left 0.18s ease; */
 }
-/* .container .signup {
-  opacity: 0;
-  transition: opacity 0.09s ease;
-  -webkit-transition: opacity 0.09s ease;
-  -moz-transition: opacity 0.09s ease;
-  -ms-transition: opacity 0.09s ease;
-  -o-transition: opacity 0.09s ease;
-}
-.container.active .signup {
-  opacity: 1;
-  transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;
-  -moz-transition: opacity 0.2s ease;
-  -ms-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
-}
-.container.active .login {
-  margin-right: -50%;
-  opacity: 0;
-  transition: margin-left 0.18s ease, opacity 0.15s ease;
-  -webkit-transition: margin-left 0.18s ease, opacity 0.15s ease;
-  -moz-transition: margin-left 0.18s ease, opacity 0.15s ease;
-  -ms-transition: margin-left 0.18s ease, opacity 0.15s ease;
-  -o-transition: margin-left 0.18s ease, opacity 0.15s ease;
-} */
 .container .form .title {
   font-size: 40px;
   font-weight: 600;
@@ -323,6 +336,7 @@ form {
   padding-right: 7px;
 }
 .label {
+  font-size: 20px;
   margin-top: 35px;
   display: inline-flex;
   margin-bottom: 7px;
@@ -331,6 +345,7 @@ form {
   height: 0;
 }
 .user {
+  font-size: 20px;
   margin-bottom: 7px;
   display: inline-flex;
   font-family: "lato";
@@ -380,4 +395,64 @@ form {
 .form .login-signup {
   margin-top: 30px;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .form .button input {
+    width: 60%;
+  }
+  .form a.text {
+    padding-left: 90px;
+  }
+}
+/*****************FOOTER*********/
+.cover {
+  margin-top: 100px;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-content {
+  font-family: "raleway";
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.footer-content > span {
+  display: block;
+  padding-top: 20px;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -ms-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+}
+.footer-content:nth-child(2) {
+  cursor: pointer;
+}
+.footer-content:nth-child(2) span:hover {
+  color: grey;
+}
+.fa-brands {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.fa-brands:hover {
+  color: grey;
+}
+/********************/
+@media (max-width: 1010px) {
+  .footer {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .footer-content {
+    padding: 20px;
+  }
 }

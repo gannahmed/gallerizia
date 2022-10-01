@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <!----------------LOADING--------------->
+  <div id="loader" class="center">G</div>
+
   <!------------------NAVBAR---------------->
   <section class="top-nav">
     <nav>
@@ -35,13 +38,13 @@
             <i class="fa-solid fa-angle-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">about us</a>
-            <a href="#">about us 2</a>
-            <a href="#">our process</a>
-            <a href="#">testimonials</a>
-            <a href="#">pricing</a>
-            <a href="#">dynamic pricing</a>
-            <a href="#">FAQ</a>
+            <a href="../about us/about.html">about us</a>
+            <a href="../about two/two.html">about us 2</a>
+            <a href="../our process/process.html">our process</a>
+            <a href="../TESTIMONIALS/test.html">testimonials</a>
+            <a href="../pricing/pricing.html">pricing</a>
+            <a href="../dynamic/dynamic.html">dynamic pricing</a>
+            <a href="../FAQ/faq.html">FAQ</a>
             <a href="#">contact us</a>
           </div>
         </div>
@@ -126,11 +129,11 @@
         <span class="title">Login</span>
 
 
-        <form action="#">
+        <form action="#" method="post">
           <div class="input-field">
             <i class="uil uil-envelope-alt icon"></i>
             <label for="username" id="input" class="user">username or email</label>
-            <input type="text" id="username" required>
+            <input type="text" class="in-put" id="username" required>
           </div>
           <div class="input-field">
             <i class="uil uil-lock icon"></i>
@@ -154,62 +157,39 @@
 
           <div class="login-signup">
             <span class="text">NOT a member?</span>
-            <a href="signup.html" class="text signup-link">signup now</a>
+            <a href="../signup/signup.html" class="text signup-link">signup now</a>
           </div>
         </form>
       </div>
-
-      <!--------------REGISTRATION FORM------------->
-      <!-- <div class="form signup">
-                <span class="title">reigstration</span>
-
-
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="username" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="username or email" required>
-                        <i class="uil uil-envelope-alt icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="create a password" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="confrim a  password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">remember me</label>
-                        </div>
-                        <a href="#" class="text">forget password?</a>
-                    </div>
-
-                    <div class="input-field button">
-                        <input type="button" value="login now" required>
-                    </div>
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">NOT a member?</span>
-                    <a href="#" class="text login-link">signup now</a>
-                </div>
+      <!-------------------FOOTER---------------->
+      <footer>
+        <div class="cover">
+          <div class="footer">
+            <div class="footer-content">
+              <h2>GALLERIZIA</h2>
+              <p>&copy; GALLERIZIA photoghraphy. 2022</p>
             </div>
+            <div class="footer-content">
+              <span>GALLERIZIA@zaheto.com</span>
+              <span>0123456789</span>
+            </div>
+            <div class="footer-content">
+              <span>CAIRO,GIZA</span>
+              <span>DOKKI, ST-OMAR BAHANASAWI</span>
+            </div>
+            <div class="footer-content">
+              <span>FOLLOW MY SOCIAL</span>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
         </div>
-    </div>
- -->
+      </footer>
 
 
 
       <script src="./account.js"></script>
-      <script type="module" src="../src/bundle.mjs"></script>
 
 
 </body>

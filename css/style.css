@@ -6,11 +6,46 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  height: 2000px;
-  background-color: #1a1717;
+  background-color: #161513;
+  color: #fff;
 }
 * {
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+::selection {
+  color: black;
+  background: white;
+}
+#loader {
+  width: 70px;
+  height: 70px;
+  font-size: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 /************************NAVBAR*****************/
 
@@ -66,6 +101,7 @@ nav {
   justify-content: space-evenly;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-menu {
   list-style: none;
@@ -76,6 +112,7 @@ nav h2 {
   color: white;
   font-family: "Raleway";
   font-weight: 300;
+  margin-left: 20px;
 }
 .nav-link {
   text-decoration: none;
@@ -133,8 +170,12 @@ nav h2 {
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.8s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
   }
 
   .nav-menu.active {
@@ -165,5 +206,175 @@ nav h2 {
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/**************************PAGE CONTENT************************/
+.cover {
+  margin-left: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1601762603339-fd61e28b698a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-attachment: fixed;
+  background-size: 650px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.icon:hover {
+  opacity: 0.5;
+}
+.cover-content {
+  padding: 200px 57px;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+.cover-content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "lato";
+  letter-spacing: 8px;
+}
+.cover-content > span {
+  font-family: "lato";
+  font-size: 30px;
+}
+.icon {
+  text-align: end;
+  font-size: 60px;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.cover-two {
+  margin-right: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1526510747491-58f928ec870f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cover-three {
+  margin-left: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-attachment: fixed;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.cover-four {
+  margin-right: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1526798513516-d2c620778abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cover-five {
+  margin-left: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1566138309357-12b188952331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80);
+  background-attachment: fixed;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.cover-six {
+  margin-right: 30px;
+  margin-top: 100px;
+  background-image: url(https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+@media (max-width: 500px) {
+  .cover .cover-two,
+  .cover-three,
+  .cover-four,
+  .cover-five,
+  .cover-six {
+    width: 317px;
+  }
+  .cover-content {
+    padding: 115px 4px;
+  }
+}
+/*******************FOOTER**************/
+.cover-footer {
+  margin-top: 100px;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-content {
+  font-family: "raleway";
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.footer-content > span {
+  display: block;
+  padding-top: 20px;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  -ms-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+}
+.footer-content:nth-child(2) {
+  cursor: pointer;
+}
+.footer-content:nth-child(2) span:hover {
+  color: grey;
+}
+.fa-brands {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.fa-brands:hover {
+  color: grey;
+}
+/********************/
+@media (max-width: 1010px) {
+  .footer {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .footer-content {
+    padding: 20px;
   }
 }
